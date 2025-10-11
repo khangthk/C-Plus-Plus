@@ -8,6 +8,7 @@
  */
 
 #include <algorithm>  /// for `std::reverse` and other operations
+#include <cstdint>
 #include <ostream>    /// for `std::cout` overload
 #include <string>     /// for `std::string`
 #include <utility>    /// for `std::pair` library
@@ -349,7 +350,7 @@ class uint128_t {
      * @brief operator -- (post-decrement)
      * @returns decremented value of this
      */
-    inline uint128_t operator--(int p) {
+    inline uint128_t operator--(int) {
         --*this;
         return *this;
     }
